@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffff0000"
+        android:id="@+id/activity_fragment">
+        <FrameLayout
+            android:id="@+id/botonera"
+            android:name="com.example.ulises.Botonera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50" />
+
+        <FrameLayout
+            android:id="@+id/propaganda"
+            android:name="com.example.ulises.Propaganda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50" />
+
+</LinearLayout>
