@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ligthRed">#bf0411</color>
+    <color name="justRed">#a61219</color> 
+    <color name="darkRed">#7B1E21</color>
+    <color name="ligthGrey">#999999</color>
+    <color name="justGrey">#4D4D4D</color>
+    <color name="darkGrey">#000000</color>
+	<color name="White">#FFFFFF</color>
+	<color name="ButtonBack">#999999</color>
+</resources>

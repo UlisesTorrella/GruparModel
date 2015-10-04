@@ -27,7 +27,7 @@ public class Propaganda extends Fragment {
         // TODO Auto-generated method stub
         View view = inflater.inflate(R.layout.propaganda, container, false);
         ImageView img = (ImageView)view.findViewById(R.id.propagandaImagen);
-        img.setImageDrawable(getActivity().getDrawable(R.drawable.grupar1));
+        img.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.grupar1));
 
         return view;
     }

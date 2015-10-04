@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="dni_enter_dni">Ingrese su DNI</string>
+    <string name="dni_enter_pan">Ingrese los 8 &#0250;ltimos d&#0237;gitos de tu tarjeta</string>
+
 </resources>

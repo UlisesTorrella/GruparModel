@@ -2,4 +2,25 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dni_button_font_size">22sp</dimen>
+    <dimen name="dni_button_text_font_size">22sp</dimen>
+    <dimen name="dni_button_min_height">20dp</dimen>
+    <dimen name="dni_button_min_width">50dp</dimen>
+    <dimen name="dni_display_font_size">22sp</dimen>
+    <dimen name="dni_label_font_size">16sp</dimen>
+
+    <dimen name="saldo_name_font_size">22sp</dimen>
+    <dimen name="saldo_text_font_size">20sp</dimen>
+    <dimen name="saldo_button_font_size">22sp</dimen>
+    <dimen name="saldo_number_margin">4dp</dimen>
+
+    <dimen name="header_font_size">16sp</dimen>
+    <dimen name="header_min_height">12dp</dimen>
+    <dimen name="header_height">30dp</dimen>
+    <dimen name="header_width">60dp</dimen>
+    <dimen name="preview_font_size">12sp</dimen>
+    <dimen name="preview_min_height">16dp</dimen>
+
+    <dimen name="message_font_size">16sp</dimen>
 </resources>
