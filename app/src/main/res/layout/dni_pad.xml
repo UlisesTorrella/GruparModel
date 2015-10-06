@@ -2,15 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
     <TextView
         android:id="@+id/dni_enter_dni"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/dni_enter_dni"
+        android:textSize="@dimen/dni_display_font_size"
         android:textColor="@color/White"
-        android:textSize="@dimen/dni_label_font_size" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/statement_dni"
@@ -36,8 +39,7 @@
             android:layout_weight="33"
             android:text="1"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_1"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/dni_2"
@@ -47,8 +49,7 @@
             android:layout_weight="33"
             android:text="2"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_2"/>
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/dni_3"
@@ -58,8 +59,7 @@
             android:layout_weight="33"
             android:text="3"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_3"/>
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <LinearLayout
@@ -73,8 +73,7 @@
             android:layout_weight="33"
             android:text="4"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_4"/>
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/dni_5"
@@ -84,8 +83,7 @@
             android:layout_weight="33"
             android:text="5"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_5"/>
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/dni_6"
@@ -95,8 +93,7 @@
             android:layout_weight="33"
             android:text="6"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_6"/>
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <LinearLayout
@@ -111,8 +108,7 @@
             android:layout_weight="33"
             android:text="7"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_7"/>
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/dni_8"
@@ -122,8 +118,7 @@
             android:layout_weight="33"
             android:text="8"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_8"/>
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/dni_9"
@@ -133,8 +128,7 @@
             android:layout_weight="33"
             android:text="9"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_9"/>
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <LinearLayout
@@ -149,8 +143,7 @@
             android:layout_weight="50"
             android:text="0"
             android:textSize="@dimen/dni_button_font_size"
-            android:textStyle="bold"
-            android:onClick="number_0"/>
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/dni_clear"
@@ -159,8 +152,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="50"
             android:text="Borrar"
-            android:textSize="@dimen/dni_button_font_size"
-            android:onClick="btn_borrar"/>
+            android:textSize="@dimen/dni_button_font_size"/>
     </LinearLayout>
 
     <LinearLayout
@@ -174,8 +166,7 @@
             android:layout_height="match_parent"
             android:layout_weight="50"
             android:text="Ver saldo"
-            android:textSize="@dimen/dni_button_text_font_size"
-            android:onClick="show_progress"/>
+            android:textSize="@dimen/dni_button_text_font_size"/>
 
         <Button
             android:id="@+id/dni_resumen"
@@ -184,8 +175,7 @@
             android:layout_height="match_parent"
             android:layout_weight="50"
             android:text="Ver resumen"
-            android:textSize="@dimen/dni_button_text_font_size"
-            android:onClick="show_progress"/>
+            android:textSize="@dimen/dni_button_text_font_size"/>
 
     </LinearLayout>
     <LinearLayout
@@ -199,8 +189,7 @@
             android:layout_height="match_parent"
             android:layout_weight="50"
             android:text="Reclamo"
-            android:textSize="@dimen/dni_button_text_font_size"
-            android:onClick="show_reclamos"/>
+            android:textSize="@dimen/dni_button_text_font_size"/>
 
 
     </LinearLayout>

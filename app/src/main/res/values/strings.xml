@@ -6,5 +6,6 @@
 
     <string name="dni_enter_dni">Ingrese su DNI</string>
     <string name="dni_enter_pan">Ingrese los 8 &#0250;ltimos d&#0237;gitos de tu tarjeta</string>
+    <string name="reclamos_title">Ingrese su reclamo</string>
 
 </resources>

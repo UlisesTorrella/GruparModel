@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/reclamos_title"
+        android:id="@+id/reclamos_text_view"
+        android:textSize="@dimen/dni_display_font_size"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:layout_weight="33"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/reclamos_edit_text"
+        android:gravity="top"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="33"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_weight="33">
+
+        <Button
+            style="@style/btnStyleGrupar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:id="@+id/button_form_back"
+            android:layout_weight="50"/>
+
+        <Button
+            style="@style/btnStyleGrupar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:id="@+id/button_form_send"
+            android:layout_weight="50"/>
+    </LinearLayout>
+
+</LinearLayout>

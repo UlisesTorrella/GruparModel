@@ -10,13 +10,13 @@
             android:name="com.example.ulises.Botonera"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="50" />
+            android:layout_weight="60" />
 
         <FrameLayout
             android:id="@+id/propaganda"
             android:name="com.example.ulises.Propaganda"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="50" />
+            android:layout_weight="40" />
 
 </LinearLayout>
