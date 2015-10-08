@@ -140,7 +140,7 @@
             style="@style/btnStyleGrupar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Print"
+            android:text="@string/data_sheet_button_print"
             android:id="@+id/datasheet_button_print"
             android:layout_weight="50"
             android:layout_gravity="bottom" />
@@ -148,7 +148,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Volver"
+            android:text="@string/data_sheet_button_back"
             android:id="@+id/datasheet_button_back"
             android:layout_gravity="bottom"
             android:layout_weight="50"
