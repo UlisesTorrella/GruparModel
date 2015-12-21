@@ -68,7 +68,8 @@ public class Progress extends Fragment {
                 fm.beginTransaction().replace(R.id.botonera, one, "datasheet").commit();
             }
             else{
-
+                Error one = new Error(customer);
+                fm.beginTransaction().replace(R.id.botonera, one, "datasheet").commit();
             }
 
         }

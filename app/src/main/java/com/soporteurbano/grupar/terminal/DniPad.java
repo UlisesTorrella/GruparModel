@@ -77,6 +77,7 @@ public class DniPad extends Fragment {
         fm = getActivity().getSupportFragmentManager();
 
         context = (AppContext) getActivity().getApplicationContext();
+        context.setIsTimerCanceled(true);
 
         //isOnline = context.getLocalConfig().isOnline();
 
@@ -205,12 +206,19 @@ public class DniPad extends Fragment {
         button_reclamo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Form one = new Form();
-                FragmentManager fm = getActivity().getSupportFragmentManager();
-                //
-                //
-                //
-                fm.beginTransaction().replace(R.id.botonera, one, "form").commit();
+                customerNumber = screen.getText().toString();
+                context.setCustomerNumber(customerNumber);
+                if (customerNumber.length() > 0) {
+                    if ((customerNumber.equals("2301") || customerNumber.equals("4883")) && lockCounter == 3) {
+                        //startActivity(new Intent(context, ConfigActivity.class));
+                        //finish();
+                    } else {
+                        Form one = new Form();
+                        fm.beginTransaction().replace(R.id.botonera, one, "form").commit();
+                    }
+                    lockCounter = 0;
+                    screen.setText("");
+                }
             }
         });
 

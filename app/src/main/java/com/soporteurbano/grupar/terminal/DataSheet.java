@@ -32,6 +32,9 @@ public class DataSheet extends Fragment {
     private TextView tag3;
     private TextView tag4;
 
+    private AppContext context;
+    private FragmentManager fm;
+
     private TextView saldo_message;
     private String operation;
     private  Map<String, String> customer;
@@ -111,6 +114,9 @@ public class DataSheet extends Fragment {
                 break;
         }
 
+        context = (AppContext) getActivity().getApplicationContext();
+        fm = getActivity().getSupportFragmentManager();
+        context.waitforme(fm);
 
 
         return view;

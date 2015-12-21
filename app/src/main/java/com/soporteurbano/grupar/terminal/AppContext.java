@@ -6,6 +6,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import org.apache.http.*;
 import org.apache.http.client.methods.HttpGet;
@@ -15,6 +17,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.*;
 
 import android.app.Application;
+import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -24,6 +27,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.BitmapFactory.Options;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Handler;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 
 import com.example.ulises.terminal.R;
@@ -122,6 +127,33 @@ public class AppContext extends Application {
     public OM getNewOM() {
         omClient = null;
         return getOM();
+    }
+
+
+    private boolean isTimerCanceled = false;
+
+    public void setIsTimerCanceled(boolean a){
+        isTimerCanceled = a;
+    }
+    public boolean getIsTimerCanceled(){
+        return isTimerCanceled;
+    }
+
+    public void waitforme(FragmentManager fm){
+        final FragmentManager fragmentmanager = fm;
+        setIsTimerCanceled(false);
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                if(!getIsTimerCanceled()){
+                    DniPad one = new DniPad();
+                    fragmentmanager.beginTransaction().replace(R.id.botonera, one, "dni_pad").commit();
+                }
+                else{
+                    setIsTimerCanceled(false);
+                }
+            }
+        }, 5000);
     }
 
 }
