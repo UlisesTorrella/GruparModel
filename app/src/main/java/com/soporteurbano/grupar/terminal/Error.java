@@ -36,10 +36,8 @@ public class Error extends Fragment {
         // TODO Auto-generated method stub
         View view = inflater.inflate(R.layout.error, container, false);
         context = (AppContext) getActivity().getApplicationContext();
-        TextView error_textview = (TextView) view.findViewById(R.id.error_text);
         fm = getActivity().getSupportFragmentManager();
         mssg = customer.get("error");
-        error_textview.setText(mssg);
         Button back = (Button) view.findViewById(R.id.error_button);
         back.setOnClickListener(new View.OnClickListener() {
             @Override

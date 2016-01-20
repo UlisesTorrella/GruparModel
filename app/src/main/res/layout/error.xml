@@ -4,26 +4,22 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Progress"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:id="@+id/error_text" />
+    android:layout_marginRight="20dp"
+    android:weightSum="100">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:id="@+id/error_img" />
+        android:layout_gravity="center"
+        android:src="@drawable/messageback"
+        android:id="@+id/imageView"
+        android:layout_weight="100"/>
 
     <Button
         android:layout_width="126dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
         android:text="@string/form_back"
-        android:id="@+id/error_button" />
+        android:id="@+id/error_button"
+        android:layout_weight="100"/>
 </LinearLayout>
